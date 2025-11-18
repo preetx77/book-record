@@ -11,7 +11,7 @@ public class Book {
         this.isBorrowed = false;
     }
 
-    // Getters and setters
+    
     public String getId() {
         return id;
     }
