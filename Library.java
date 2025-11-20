@@ -8,13 +8,12 @@ public class Library {
         this.books = new ArrayList<>();
     }
 
-    // Add a new book to the library
+    
     public void addBook(Book book) {
         books.add(book);
         System.out.println("Book added successfully: " + book.getTitle());
     }
 
-    // Remove a book by ID
     public boolean removeBook(String bookId) {
         for (Book book : books) {
             if (book.getId().equals(bookId)) {
@@ -27,7 +26,6 @@ public class Library {
         return false;
     }
 
-    // Borrow a book
     public boolean borrowBook(String bookId) {
         for (Book book : books) {
             if (book.getId().equals(bookId)) {
@@ -45,7 +43,7 @@ public class Library {
         return false;
     }
 
-    // Return a book
+    
     public boolean returnBook(String bookId) {
         for (Book book : books) {
             if (book.getId().equals(bookId)) {
@@ -63,7 +61,7 @@ public class Library {
         return false;
     }
 
-    // Display all books
+    
     public void displayAllBooks() {
         if (books.isEmpty()) {
             System.out.println("No books in the library.");
